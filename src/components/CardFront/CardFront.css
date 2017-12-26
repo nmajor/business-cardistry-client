@@ -1,0 +1,10 @@
+.CardFront {
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  padding: 5%;
+}
+.CardFront-content {
+  border-width: 3px;
+  border-style: solid;
+}

@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html, body, #root {
+  height: 100%;
+}
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.hor-padless {
+  padding-right: 0;
+  padding-left: 0;
+}
+.height-100 {
+  height: 100%;
+}
+.height-50 {
+  height: 50%;
+}
+.color-box {
+  width: 100%;
+  min-width: 20px;
+  display: inline-block;
+  height: 20px;
+  margin-bottom: -6px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+.content-box {
+  background: #FFF;
+  padding: 22px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  border: 1px solid #CCC;
+  border-radius: 3px;
+}
