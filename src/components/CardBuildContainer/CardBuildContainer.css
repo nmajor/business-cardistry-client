@@ -1,4 +1,28 @@
 .CardBuildContainer {
-  padding-top: 52px;
-  height: 100%;
+}
+
+.CardBuildContainer-aside {
+  padding: 20px;
+  box-shadow: 0 2px 2px 0 #000;
+}
+
+@media (min-width: 992px) {
+  .CardBuildContainer {
+    height: 100%;
+  }
+
+  .CardBuildContainer-aside {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  .CardBuildContainer-front {
+    height: 50%;
+  }
+  .CardBuildContainer-back {
+    height: 50%;
+  }
 }

@@ -1,0 +1,38 @@
+.Logo {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Logo-outside-border {
+  max-width: 400px;
+  margin: 5px 0;
+  border: 5px solid #333;
+  padding: 10px;
+}
+
+.Logo-inside-border {
+  font-family: 'Great Vibes', cursive;
+  padding: 15px;
+  border: 2px solid #333;
+  font-size: 30px;
+  text-align: center
+}
+
+@media (min-width: 992px) {
+  .Logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .Logo-inside-border {
+    padding: 20px;
+    font-size: 40px;
+  }
+}

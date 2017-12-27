@@ -3,4 +3,6 @@
 .CardDimensions {
   width: 350px;
   height: 200px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }

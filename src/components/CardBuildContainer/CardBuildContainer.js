@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './CardBuildContainer.css';
 import { Grid, Col } from 'react-bootstrap';
+import Logo from '../Logo/Logo';
 import CardForm from '../CardForm/CardForm';
 import CardFrontContainer from '../CardFrontContainer/CardFrontContainer';
 import CardBackContainer from '../CardBackContainer/CardBackContainer';
@@ -40,20 +41,21 @@ class CardBuildContainer extends Component {
   render() {
     return (
       <Grid className="CardBuildContainer hor-padless" fluid={true}>
-        <Col className="hor-padless height-100" md={4}>
+        <Col className="CardBuildContainer-aside hor-padless height-100" md={4}>
+          <Logo />
           <CardForm
             cardData={this.state}
             onChange={this.handleDataChange}
           />
         </Col>
         <Col className="hor-padless height-100" md={8}>
-          <div className="height-50">
+          <div className="CardBuildContainer-front">
             <CardFrontContainer
               cardData={this.state}
               onChange={this.handleDataChange}
             />
           </div>
-          <div className="height-50">
+          <div className="CardBuildContainer-back">
             <CardBackContainer
               cardData={this.state}
               onChange={this.handleDataChange}

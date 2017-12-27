@@ -1,6 +1,6 @@
 .CardBackContainer {
   /* border-top: 5px solid #FFF; */
-  height: 100%;
+  padding: 30px 0;
 
   background: #30E8BF;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
@@ -8,7 +8,7 @@
 }
 
 .CardBackContainer-preview {
-  height: 100%;
+  margin-bottom: 30px;
 
   display: flex;
   justify-content: center;
@@ -22,4 +22,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 992px) {
+  .CardBackContainer {
+    height: 100%;
+    padding: 0;
+  }
+
+  .CardBackContainer-preview {
+    height: 100%;
+    padding: 0;
+  }
 }
