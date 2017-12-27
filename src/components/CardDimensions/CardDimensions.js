@@ -6,7 +6,12 @@ class CardDimensions extends Component {
   render() {
     return (
       <div className="CardDimensions">
-        {this.props.children}
+        <div className="CardDimensions-text">
+          {this.props.text}
+        </div>
+        <div className="CardDimensions-content">
+          {this.props.children}
+        </div>
       </div>
     );
   }

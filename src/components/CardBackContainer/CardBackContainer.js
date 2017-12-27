@@ -28,7 +28,7 @@ class CardBackContainer extends Component {
     return (
       <div className="CardBackContainer">
         <Col md={7} className="CardBackContainer-preview">
-          <CardDimensions>
+          <CardDimensions text="Back">
             <CardBack
               cardData={cardData}
             />

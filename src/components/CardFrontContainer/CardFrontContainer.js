@@ -20,8 +20,6 @@ class CardFrontContainer extends Component {
   render() {
     const { cardData } = this.props;
 
-    console.log('blah hey card data', cardData);
-
     const formData = {
       bgColor: cardData.frontBgColor,
       textColor: cardData.frontTextColor,
@@ -30,7 +28,7 @@ class CardFrontContainer extends Component {
     return (
       <div className="CardFrontContainer">
         <Col md={7} className="CardFrontContainer-preview">
-          <CardDimensions>
+          <CardDimensions text="Front">
             <CardFront
               cardData={cardData}
             />
