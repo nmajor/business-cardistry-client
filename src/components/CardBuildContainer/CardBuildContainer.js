@@ -13,13 +13,13 @@ class CardBuildContainer extends Component {
     super(props);
 
     this.state = {
-      name: 'Joe Cool',
-      title: 'Space Pirate',
+      name: '',
+      title: '',
 
-      phone: '555-555-5555',
-      email: 'nick@nmajor.com',
-      github: 'nmajor',
-      linkedin: '/in/nmajor',
+      phone: '',
+      email: '',
+      github: '',
+      linkedin: '',
 
       phoneShow: true,
       emailShow: true,

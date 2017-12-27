@@ -1,4 +1,6 @@
 .Logo {
+  color: #324376;
+  border-color: #324376;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 30px;
   display: flex;
@@ -10,14 +12,14 @@
 .Logo-outside-border {
   max-width: 400px;
   margin: 5px 0;
-  border: 5px solid #333;
+  border: 5px solid #324376;
   padding: 10px;
 }
 
 .Logo-inside-border {
   font-family: 'Great Vibes', cursive;
   padding: 15px;
-  border: 2px solid #333;
+  border: 2px solid #324376;
   font-size: 30px;
   text-align: center
 }

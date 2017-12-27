@@ -54,7 +54,7 @@ class CardForm extends Component {
             <FormControl
               className="form-control"
               type="text"
-              placeholder="John Doe"
+              placeholder="Joseph Cool"
               name="name"
               value={name}
               onChange={this.handleTextChange}
@@ -65,7 +65,7 @@ class CardForm extends Component {
             <ControlLabel>Title</ControlLabel>
             <FormControl
               type="text"
-              placeholder="Space Pirate"
+              placeholder="Fighter Pilot"
               name="title"
               value={title}
               onChange={this.handleTextChange}
@@ -76,7 +76,7 @@ class CardForm extends Component {
             <ControlLabel>Phone</ControlLabel>
             <InputGroup>
               <InputGroup.Addon>
-                {phoneIcon('#333', 16)}
+                {phoneIcon('#324376', 16)}
               </InputGroup.Addon>
               <FormControl
                 type="text"
@@ -101,11 +101,11 @@ class CardForm extends Component {
             <ControlLabel>Email</ControlLabel>
             <InputGroup>
               <InputGroup.Addon>
-                {envelopeIcon('#333', 16)}
+                {envelopeIcon('#324376', 16)}
               </InputGroup.Addon>
               <FormControl
                 type="text"
-                placeholder="nick@nmajor.com"
+                placeholder="joseph@cool.com"
                 name="email"
                 value={email}
                 onChange={this.handleTextChange}
@@ -127,11 +127,11 @@ class CardForm extends Component {
             <ControlLabel>Github Username</ControlLabel>
             <InputGroup>
               <InputGroup.Addon>
-                {githubIcon('#333', 16)}
+                {githubIcon('#324376', 16)}
               </InputGroup.Addon>
               <FormControl
                 type="text"
-                placeholder="nmajor"
+                placeholder="jcool1950"
                 name="github"
                 value={github}
                 onChange={this.handleTextChange}
@@ -153,11 +153,11 @@ class CardForm extends Component {
             <ControlLabel>LinkedIn Path</ControlLabel>
             <InputGroup>
               <InputGroup.Addon>
-                {linkedinIcon('#333', 16)}
+                {linkedinIcon('#324376', 16)}
               </InputGroup.Addon>
               <FormControl
                 type="text"
-                placeholder="/in/nmajor"
+                placeholder="/in/joesephcool"
                 name="linkedin"
                 value={linkedin}
                 onChange={this.handleTextChange}
