@@ -5,6 +5,8 @@ import Logo from '../Logo/Logo';
 import CardForm from '../CardForm/CardForm';
 import CardFrontContainer from '../CardFrontContainer/CardFrontContainer';
 import CardBackContainer from '../CardBackContainer/CardBackContainer';
+import { wrapHtml } from '../../helpers';
+import { submitHtml } from '../../actions';
 
 class CardBuildContainer extends Component {
   constructor(props) {
@@ -35,7 +37,9 @@ class CardBuildContainer extends Component {
     this.processPdf = this.processPdf.bind(this);
   }
   processPdf(html) {
-    console.log('blah hey html', html);
+    submitHtml(wrapHtml(html), (res) => {
+      window.location.href = res.fileUrl;
+    });
   }
   handleDataChange(field, value) {
     const newState = {};

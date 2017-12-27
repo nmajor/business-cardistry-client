@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { renderToString } from 'react-dom/server'
 import _ from 'lodash';
 import './CardFrontContainer.css';
 import {
@@ -13,9 +14,16 @@ class CardFrontContainer extends Component {
     super(props);
 
     this.handleFormChange = this.handleFormChange.bind(this);
+    this.handleDownloadClick = this.handleDownloadClick.bind(this);
   }
   handleFormChange(field, value) {
     this.props.onChange(_.camelCase(`front-${field}`), value);
+  }
+  handleDownloadClick() {
+    const { cardData } = this.props;
+    const cardFront = <CardFront cardData={cardData} />;
+
+    this.props.onDownload(renderToString(cardFront));
   }
   render() {
     const { cardData } = this.props;
@@ -40,6 +48,7 @@ class CardFrontContainer extends Component {
               onChange={this.handleFormChange}
               formData={formData}
               buttonText="Front PDF"
+              onDownload={this.handleDownloadClick}
             />
           </div>
         </Col>

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './CardSideActionForm.css';
 import { SwatchesPicker } from 'react-color';
 import {
-  ButtonToolbar,
-  ButtonGroup,
   Button,
   FormGroup,
   InputGroup,
@@ -100,7 +98,7 @@ class CardSideActionForm extends Component {
         {this.renderFormBody()}
         <hr />
         <div>
-          <Button bsStyle="success" block><i className="fa fa-download" aria-hidden="true"></i> {this.props.buttonText}</Button>
+          <Button bsStyle="success" block onClick={this.props.onDownload}><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> {this.props.buttonText}</Button>
         </div>
       </form>
     );

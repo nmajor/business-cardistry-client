@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import githubIcon from '../../icons/github.svg';
-import phoneIcon from '../../icons/phone.svg';
-import envelopeIcon from '../../icons/envelope.svg';
-import linkedinIcon from '../../icons/linkedin.svg';
+
+import {
+  phoneIcon,
+  envelopeIcon,
+  githubIcon,
+  linkedinIcon,
+} from '../../helpers';
 
 class CardBack extends Component {
   render() {
@@ -31,13 +34,15 @@ class CardBack extends Component {
           fontFamily: '\'Cardo\', serif',
           height: '100%',
           width: '100%',
-          padding: '5%',
           position: 'relative',
         }}
       >
         <div
           style={{
+            position: 'absolute',
+            top: '15px',
             textAlign: 'center',
+            width: '100%',
           }}
         >
           <div
@@ -56,52 +61,45 @@ class CardBack extends Component {
           style={{
             fontSize: '10px',
             position: 'absolute',
-            bottom: '7%',
+            left: '15px',
+            bottom: '15px',
             lineHeight: '16px',
           }}
         >
           { phoneShow && phone ? <div>
-            <img
-              src={phoneIcon}
-              height="10"
+            <span
               style={{
                 position: 'relative',
-                top: '-2px',
+                top: '1px',
               }}
-            /> {phone}
+            >{phoneIcon(backTextColor, 10)}</span> {phone}
           </div> : null }
 
           { emailShow && email ? <div>
-            <img
-              src={envelopeIcon}
-              height="10"
+            <span
               style={{
                 position: 'relative',
-                top: '-1px',
+                top: '2px',
               }}
-            /> {email}
+            >{envelopeIcon(backTextColor, 10)}</span> {email}
           </div> : null }
 
           { githubShow && github ? <div>
-            <img
-              src={githubIcon}
-              height="10"
+            <span
               style={{
                 position: 'relative',
-                top: '-1px',
+                top: '2px',
               }}
-            /> {github}
+            >{githubIcon(backTextColor, 10)}</span> {github}
           </div> : null }
 
           { linkedinShow && linkedin ? <div>
-            <img
-              src={linkedinIcon}
-              height="10"
+            <span
               style={{
                 position: 'relative',
-                top: '-3px',
+                top: '0px',
               }}
-            /> {linkedin}
+            >{linkedinIcon(backTextColor, 10)}</span> {linkedin}
           </div> : null }
         </div>
       </div>

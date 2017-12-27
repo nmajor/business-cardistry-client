@@ -11,15 +11,15 @@ class CardFront extends Component {
           color: cardData.frontTextColor,
           height: '100%',
           width: '100%',
-          padding: '5%',
+          // padding: '20px',
         }}
       >
         <div
           className="CardFront-content"
           style={{
-            borderColor: cardData.frontTextColor,
-            borderWidth: '3px',
-            borderStyle: 'solid',
+            // borderColor: cardData.frontTextColor,
+            // borderWidth: '3px',
+            // borderStyle: 'solid',
             height: '100%',
             width: '100%',
             display: 'table',
@@ -35,7 +35,9 @@ class CardFront extends Component {
               fontWeight: '100',
             }}
           >
-            {cardData.name}
+            <span style={{}}>
+              {cardData.name}
+            </span>
           </div>
         </div>
       </div>
