@@ -10,23 +10,29 @@ class CardBuildContainer extends Component {
     super(props);
 
     this.state = {
-      firstName: '',
-      lastName: '',
+      name: 'Joe Cool',
+      title: 'Space Pirate',
 
-      phone: '',
-      email: '',
-      github: '',
-      linkedin: '',
+      phone: '555-555-5555',
+      email: 'nick@nmajor.com',
+      github: 'nmajor',
+      linkedin: '/in/nmajor',
 
       phoneShow: true,
       emailShow: true,
       githubShow: true,
       linkedinShow: true,
+
+      frontBgColor: '#ffffff',
+      frontTextColor: '#333333',
+
+      backBgColor: '#ffffff',
+      backTextColor: '#333333',
     };
 
-    this.handleFormChange = this.handleFormChange.bind(this);
+    this.handleDataChange = this.handleDataChange.bind(this);
   }
-  handleFormChange(field, value) {
+  handleDataChange(field, value) {
     const newState = {};
     newState[field] = value;
     this.setState(newState);
@@ -37,18 +43,20 @@ class CardBuildContainer extends Component {
         <Col className="hor-padless height-100" md={4}>
           <CardForm
             cardData={this.state}
-            onChange={this.handleFormChange}
+            onChange={this.handleDataChange}
           />
         </Col>
         <Col className="hor-padless height-100" md={8}>
           <div className="height-50">
             <CardFrontContainer
               cardData={this.state}
+              onChange={this.handleDataChange}
             />
           </div>
           <div className="height-50">
             <CardBackContainer
               cardData={this.state}
+              onChange={this.handleDataChange}
             />
           </div>
         </Col>

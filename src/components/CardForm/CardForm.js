@@ -26,8 +26,8 @@ class CardForm extends Component {
   }
   render() {
     const {
-      firstName,
-      lastName,
+      name,
+      title,
 
       phone,
       email,
@@ -44,24 +44,24 @@ class CardForm extends Component {
       <div className="CardForm">
         <form>
           <FormGroup>
-            <ControlLabel>First Name</ControlLabel>
+            <ControlLabel>Name</ControlLabel>
             <FormControl
               className="form-control"
               type="text"
-              placeholder="John"
-              name="firstName"
-              value={firstName}
+              placeholder="John Doe"
+              name="name"
+              value={name}
               onChange={this.handleTextChange}
             />
           </FormGroup>
 
           <FormGroup>
-            <ControlLabel>Last Name</ControlLabel>
+            <ControlLabel>Title</ControlLabel>
             <FormControl
               type="text"
-              placeholder="Doe"
-              name="lastName"
-              value={lastName}
+              placeholder="Space Pirate"
+              name="title"
+              value={title}
               onChange={this.handleTextChange}
             />
           </FormGroup>

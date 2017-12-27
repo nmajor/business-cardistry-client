@@ -100,7 +100,7 @@ class CardSideActionForm extends Component {
         {this.renderFormBody()}
         <hr />
         <div>
-          <Button bsStyle="success" block><i className="fa fa-download" aria-hidden="true"></i> Front PDF</Button>
+          <Button bsStyle="success" block><i className="fa fa-download" aria-hidden="true"></i> {this.props.buttonText}</Button>
         </div>
       </form>
     );

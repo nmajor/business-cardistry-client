@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import './CardFrontContainer.css';
 import {
   Col,
@@ -11,31 +12,36 @@ class CardFrontContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      bgColor: '#ffffff',
-      textColor: '#333333',
-    };
-
     this.handleFormChange = this.handleFormChange.bind(this);
   }
   handleFormChange(field, value) {
-    const newState = {};
-    newState[field] = value;
-    this.setState(newState);
+    this.props.onChange(_.camelCase(`front-${field}`), value);
   }
   render() {
+    const { cardData } = this.props;
+
+    console.log('blah hey card data', cardData);
+
+    const formData = {
+      bgColor: cardData.frontBgColor,
+      textColor: cardData.frontTextColor,
+    }
+
     return (
       <div className="CardFrontContainer">
         <Col md={7} className="CardFrontContainer-preview">
           <CardDimensions>
-            <CardFront />
+            <CardFront
+              cardData={cardData}
+            />
           </CardDimensions>
         </Col>
         <Col md={5} className="CardFrontContainer-actions">
           <div className="content-box">
             <CardSideActionForm
               onChange={this.handleFormChange}
-              formData={this.state}
+              formData={formData}
+              buttonText="Front PDF"
             />
           </div>
         </Col>

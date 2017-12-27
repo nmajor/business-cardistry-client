@@ -1,7 +1,25 @@
 .CardBackContainer {
+  /* border-top: 5px solid #FFF; */
   height: 100%;
 
   background: #30E8BF;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.CardBackContainer-preview {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardBackContainer-actions {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
