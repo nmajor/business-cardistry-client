@@ -6,6 +6,10 @@ import {
   FormControl,
   ControlLabel,
 } from 'react-bootstrap';
+import githubIcon from '../../icons/github.svg';
+import phoneIcon from '../../icons/phone.svg';
+import envelopeIcon from '../../icons/envelope.svg';
+import linkedinIcon from '../../icons/linkedin.svg';
 
 class CardForm extends Component {
   constructor(props) {
@@ -70,7 +74,7 @@ class CardForm extends Component {
             <ControlLabel>Phone</ControlLabel>
             <InputGroup>
               <InputGroup.Addon>
-                <i className="fa fa-phone" aria-hidden="true"></i>
+                <img src={phoneIcon} height="16" />
               </InputGroup.Addon>
               <FormControl
                 type="text"
@@ -95,7 +99,7 @@ class CardForm extends Component {
             <ControlLabel>Email</ControlLabel>
             <InputGroup>
               <InputGroup.Addon>
-                <i className="fa fa-envelope" aria-hidden="true"></i>
+                <img src={envelopeIcon} height="16" />
               </InputGroup.Addon>
               <FormControl
                 type="text"
@@ -121,7 +125,7 @@ class CardForm extends Component {
             <ControlLabel>Github Username</ControlLabel>
             <InputGroup>
               <InputGroup.Addon>
-                <i className="fa fa-github" aria-hidden="true"></i>
+                <img src={githubIcon} height="16" />
               </InputGroup.Addon>
               <FormControl
                 type="text"
@@ -147,7 +151,7 @@ class CardForm extends Component {
             <ControlLabel>LinkedIn Path</ControlLabel>
             <InputGroup>
               <InputGroup.Addon>
-                <i className="fa fa-linkedin" aria-hidden="true"></i>
+                <img src={linkedinIcon} height="16" />
               </InputGroup.Addon>
               <FormControl
                 type="text"

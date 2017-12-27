@@ -32,6 +32,10 @@ class CardBuildContainer extends Component {
     };
 
     this.handleDataChange = this.handleDataChange.bind(this);
+    this.processPdf = this.processPdf.bind(this);
+  }
+  processPdf(html) {
+    console.log('blah hey html', html);
   }
   handleDataChange(field, value) {
     const newState = {};
@@ -53,12 +57,14 @@ class CardBuildContainer extends Component {
             <CardFrontContainer
               cardData={this.state}
               onChange={this.handleDataChange}
+              onDownload={this.processPdf}
             />
           </div>
           <div className="CardBuildContainer-back">
             <CardBackContainer
               cardData={this.state}
               onChange={this.handleDataChange}
+              onDownload={this.processPdf}
             />
           </div>
         </Col>

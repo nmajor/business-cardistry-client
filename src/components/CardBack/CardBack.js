@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import githubIcon from '../../icons/github.svg';
+import phoneIcon from '../../icons/phone.svg';
+import envelopeIcon from '../../icons/envelope.svg';
+import linkedinIcon from '../../icons/linkedin.svg';
 
 class CardBack extends Component {
   render() {
@@ -53,22 +57,51 @@ class CardBack extends Component {
             fontSize: '10px',
             position: 'absolute',
             bottom: '7%',
+            lineHeight: '16px',
           }}
         >
           { phoneShow && phone ? <div>
-            <i className="fa fa-phone" aria-hidden="true"></i> {phone}
+            <img
+              src={phoneIcon}
+              height="10"
+              style={{
+                position: 'relative',
+                top: '-2px',
+              }}
+            /> {phone}
           </div> : null }
 
           { emailShow && email ? <div>
-            <i className="fa fa-envelope" aria-hidden="true"></i> {email}
+            <img
+              src={envelopeIcon}
+              height="10"
+              style={{
+                position: 'relative',
+                top: '-1px',
+              }}
+            /> {email}
           </div> : null }
 
           { githubShow && github ? <div>
-            <i className="fa fa-github" aria-hidden="true"></i> {github}
+            <img
+              src={githubIcon}
+              height="10"
+              style={{
+                position: 'relative',
+                top: '-1px',
+              }}
+            /> {github}
           </div> : null }
 
           { linkedinShow && linkedin ? <div>
-            <i className="fa fa-linkedin" aria-hidden="true"></i> {linkedin}
+            <img
+              src={linkedinIcon}
+              height="10"
+              style={{
+                position: 'relative',
+                top: '-3px',
+              }}
+            /> {linkedin}
           </div> : null }
         </div>
       </div>
