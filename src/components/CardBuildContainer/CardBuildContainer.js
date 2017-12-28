@@ -57,10 +57,6 @@ class CardBuildContainer extends Component {
     submitHtml(wrapHtml(html), (res) => {
       const oldPath = window.location.href;
       window.location.href = res.fileUrl;
-
-      setTimeout(() => {
-        window.location.href = oldPath;
-      }, 1000);
     });
   }
   handleDataChange(field, value) {
