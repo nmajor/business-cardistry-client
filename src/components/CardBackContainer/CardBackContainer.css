@@ -1,7 +1,6 @@
 .CardBackContainer {
   /* border-top: 5px solid #FFF; */
   padding: 30px 0;
-  background-color: #324376;  /* fallback for old browsers */
 }
 
 .CardBackContainer-preview {

@@ -36,7 +36,7 @@ class CardFront extends Component {
             }}
           >
             <span style={{}}>
-              {cardData.name}
+              {cardData.name || "Add your name"}
             </span>
           </div>
         </div>

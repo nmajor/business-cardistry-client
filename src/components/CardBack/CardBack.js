@@ -50,7 +50,7 @@ class CardBack extends Component {
               fontSize: '20px',
               fontFamily: '\'Montserrat\', sans-serif',
             }}
-          >{name}</div>
+          >{name || "Add your name"}</div>
           <div
             style={{
               fontSize: '14px'

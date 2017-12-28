@@ -48,6 +48,9 @@ class CardForm extends Component {
 
     return (
       <div className="CardForm">
+        <div className="text-right">
+          <div className="btn btn-xs btn-link" onClick={this.props.randomizeColors}>Randomize Colors</div>
+        </div>
         <form>
           <FormGroup>
             <ControlLabel>Name</ControlLabel>

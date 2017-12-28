@@ -34,9 +34,9 @@ class CardFrontContainer extends Component {
     }
 
     return (
-      <div className="CardFrontContainer">
+      <div  style={{ backgroundColor: cardData.frontTextColor }} className="CardFrontContainer">
         <Col md={7} className="CardFrontContainer-preview">
-          <CardDimensions text="Front">
+          <CardDimensions text="Front" color={cardData.frontBgColor}>
             <CardFront
               cardData={cardData}
             />
